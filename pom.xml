@@ -13,7 +13,7 @@
 
     <groupId>org.incode.eurocommercial</groupId>
     <artifactId>ecpcrm-canonical</artifactId>
-    <version>1.16.2-SNAPSHOT</version>
+    <version>${revision}</version>
     <name>ECP CRM Canonical DTOs</name>
 
     <description>
@@ -77,13 +77,6 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
                 <version>1.0.0</version>
-                <configuration>
-                    <updatePomFile>true</updatePomFile>
-                    <pomElements>
-                        <dependencyManagement>resolve</dependencyManagement>
-                        <dependencies>resolve</dependencies>
-                    </pomElements>
-                </configuration>
                 <executions>
                     <execution>
                         <id>flatten</id>
@@ -91,6 +84,22 @@
                         <goals>
                             <goal>flatten</goal>
                         </goals>
+                        <configuration>
+                            <updatePomFile>true</updatePomFile>
+                            <pomElements>
+                                <parent>resolve</parent>
+                                <name>resolve</name>
+                                <description>resolve</description>
+                                <url>resolve</url>
+                                <scm>resolve</scm>
+                                <developers>resolve</developers>
+                                <properties>resolve</properties>
+                                <build>resolve</build>
+                                <dependencyManagement>resolve</dependencyManagement>
+                                <dependencies>resolve</dependencies>
+                                <profiles>resolve</profiles>
+                            </pomElements>
+                        </configuration>
                     </execution>
                     <execution>
                         <id>flatten.clean</id>
@@ -105,6 +114,8 @@
     </build>
 
     <properties>
+        <revision>1.16.2-SNAPSHOT</revision>
+
         <isis.version>1.16.2.20180705-2207-210fd1e3</isis.version>
         <incode-platform.version>1.16.2.20180704-2126-e962fc24</incode-platform.version>
 
@@ -128,6 +139,7 @@
             <version>${lombok.version}</version>
         </dependency>
 
+<!--
         <dependency>
             <groupId>org.isisaddons.module.fakedata</groupId>
             <artifactId>isis-module-fakedata-dom</artifactId>
@@ -135,7 +147,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- testing -->
         <dependency>
             <groupId>org.apache.isis.mavendeps</groupId>
             <artifactId>isis-mavendeps-testing</artifactId>
@@ -150,6 +161,7 @@
             <version>${javafaker.version}</version>
             <scope>test</scope>
         </dependency>
+-->
 
     </dependencies>
 
