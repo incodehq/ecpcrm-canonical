@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+<xs:schema targetNamespace="http://ecpcrm.incode.org/user/v1"
+           elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://ecpcrm.incode.org/user/v1"
+           xmlns:com="http://isis.apache.org/schema/common"
+>
+
+    <xs:import namespace="http://isis.apache.org/schema/common" schemaLocation="http://isis.apache.org/schema/common/common.xsd"/>
+
+    <xs:element name="userDto">
+        <xs:annotation>
+            <xs:documentation>Represents v1.0 of this schema (as per majorVersion.minorVersion @default attribute, below).
+            </xs:documentation>
+        </xs:annotation>
+
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="userType">
+                    <xs:sequence>
+                        <xs:element name="majorVersion" type="xs:string" minOccurs="1" maxOccurs="1" default="1">
+                            <xs:annotation>
+                                <xs:documentation>The major version of the schema that an XML instance was created using.
+                                </xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:element name="minorVersion" type="xs:string" minOccurs="1" maxOccurs="1" default="0">
+                            <xs:annotation>
+                                <xs:documentation>The minor version of the schema that an XML instance was created using.
+                                </xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="userType">
+        <xs:sequence>
+            <xs:element name="atPath" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="reference" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="title" type="title" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="firstName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="lastName" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="email" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="address" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="zipcode" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="city" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="phoneNumber" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="birthDate" type="xs:date" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="center" type="com:oidDto" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="enabled" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="promotionalEmails" type="xs:boolean" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="children" type="children" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="cards" type="cards" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="hasCar" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="children">
+        <xs:sequence>
+            <xs:element name="child" type="com:oidDto" minOccurs="0" maxOccurs="unbounded">
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="cards">
+        <xs:sequence>
+            <xs:element name="card" type="com:oidDto" minOccurs="0" maxOccurs="unbounded">
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="title">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="MR"/>
+            <xs:enumeration value="MRS"/>
+            <xs:enumeration value="MISS"/>
+            <xs:enumeration value="UNKNOWN_IMPORT"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
