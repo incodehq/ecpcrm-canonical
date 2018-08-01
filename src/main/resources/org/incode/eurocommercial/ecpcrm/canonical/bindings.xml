@@ -35,4 +35,13 @@
         </jaxb:bindings>
     </jaxb:bindings>
 
+    <jaxb:bindings schemaLocation="center/v1/center-1.0.xsd">
+        <jaxb:schemaBindings>
+            <jaxb:package name="org.incode.eurocommercial.ecpcrm.canonical.center.v1"/>
+        </jaxb:schemaBindings>
+        <jaxb:bindings>
+            <namespace:prefix name="center" />
+        </jaxb:bindings>
+    </jaxb:bindings>
+
 </jaxb:bindings>
