@@ -15,116 +15,6 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.github.javafaker</groupId>
-        <artifactId>javafaker</artifactId>
-        <version>0.5</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.metamodel.paraname8</groupId>
-        <artifactId>isis-metamodel-paraname8-dom</artifactId>
-        <version>1.16.2.20180704-2126-e962fc24</version>
-      </dependency>
-      <dependency>
-        <groupId>org.assertj</groupId>
-        <artifactId>assertj-core</artifactId>
-        <version>3.6.0</version>
-      </dependency>
-      <dependency>
-        <groupId>org.incode.eurocommercial</groupId>
-        <artifactId>ecpcrm-application</artifactId>
-        <version>1.16.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.incode.eurocommercial</groupId>
-        <artifactId>ecpcrm-webapp</artifactId>
-        <version>1.16.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>ma.glasnost.orika</groupId>
-        <artifactId>orika-core</artifactId>
-        <version>1.4.5</version>
-      </dependency>
-      <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>5.1.6</version>
-      </dependency>
-      <dependency>
-        <groupId>commons-beanutils</groupId>
-        <artifactId>commons-beanutils</artifactId>
-        <version>1.9.3</version>
-      </dependency>
-      <dependency>
-        <groupId>org.incode.eurocommercial</groupId>
-        <artifactId>ecpcrm-canonical</artifactId>
-        <version>1.16.2-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.module.audit</groupId>
-        <artifactId>isis-module-audit-dom</artifactId>
-        <version>1.16.2.20180704-2126-e962fc24</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.module.command</groupId>
-        <artifactId>isis-module-command-dom</artifactId>
-        <version>1.16.2.20180704-2126-e962fc24</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.module.docx</groupId>
-        <artifactId>isis-module-docx-dom</artifactId>
-        <version>1.16.2.20180704-2126-e962fc24</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.module.excel</groupId>
-        <artifactId>isis-module-excel-dom</artifactId>
-        <version>1.16.2.20180704-2126-e962fc24</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.module.fakedata</groupId>
-        <artifactId>isis-module-fakedata-dom</artifactId>
-        <version>1.16.2.20180704-2126-e962fc24</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.module.security</groupId>
-        <artifactId>isis-module-security-dom</artifactId>
-        <version>1.16.2.20180704-2126-e962fc24</version>
-      </dependency>
-      <dependency>
-        <groupId>org.mindrot</groupId>
-        <artifactId>jbcrypt</artifactId>
-        <version>0.3m</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.module.sessionlogger</groupId>
-        <artifactId>isis-module-sessionlogger-dom</artifactId>
-        <version>1.16.2.20180704-2126-e962fc24</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.module.settings</groupId>
-        <artifactId>isis-module-settings-dom</artifactId>
-        <version>1.15.0</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.wicket.excel</groupId>
-        <artifactId>isis-wicket-excel-cpt</artifactId>
-        <version>1.16.2.20180704-2126-e962fc24</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.wicket.fullcalendar2</groupId>
-        <artifactId>isis-wicket-fullcalendar2-cpt</artifactId>
-        <version>1.16.2.20180704-2126-e962fc24</version>
-      </dependency>
-      <dependency>
-        <groupId>org.isisaddons.wicket.gmap3</groupId>
-        <artifactId>isis-wicket-gmap3-cpt</artifactId>
-        <version>1.16.2.20180704-2126-e962fc24</version>
-      </dependency>
-      <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <version>1.18.0</version>
-      </dependency>
-      <dependency>
         <groupId>org.incode.mavenmixin</groupId>
         <artifactId>incode-mavenmixin-swagger</artifactId>
         <version>1.16.2</version>
@@ -159,6 +49,11 @@
         <groupId>org.isisaddons.metamodel.paraname8</groupId>
         <artifactId>isis-metamodel-paraname8-dom</artifactId>
         <version>1.16.2.20180707-1320-eca4c55a</version>
+      </dependency>
+      <dependency>
+        <groupId>org.isisaddons.metamodel.paraname8</groupId>
+        <artifactId>isis-metamodel-paraname8-dom</artifactId>
+        <version>1.16.2.20180707-1320-eca4c55a</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
@@ -346,8 +241,18 @@
         <groupId>org.isisaddons.module.audit</groupId>
         <artifactId>isis-module-audit-dom</artifactId>
         <version>1.16.2.20180707-1320-eca4c55a</version>
+      </dependency>
+      <dependency>
+        <groupId>org.isisaddons.module.audit</groupId>
+        <artifactId>isis-module-audit-dom</artifactId>
+        <version>1.16.2.20180707-1320-eca4c55a</version>
         <type>test-jar</type>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.isisaddons.module.command</groupId>
+        <artifactId>isis-module-command-dom</artifactId>
+        <version>1.16.2.20180707-1320-eca4c55a</version>
       </dependency>
       <dependency>
         <groupId>org.isisaddons.module.command</groupId>
@@ -367,6 +272,11 @@
         <version>1.16.2.20180707-1320-eca4c55a</version>
         <type>test-jar</type>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.isisaddons.module.docx</groupId>
+        <artifactId>isis-module-docx-dom</artifactId>
+        <version>1.16.2.20180707-1320-eca4c55a</version>
       </dependency>
       <dependency>
         <groupId>org.isisaddons.module.docx</groupId>
@@ -403,8 +313,18 @@
         <groupId>org.isisaddons.module.excel</groupId>
         <artifactId>isis-module-excel-dom</artifactId>
         <version>1.16.2.20180707-1320-eca4c55a</version>
+      </dependency>
+      <dependency>
+        <groupId>org.isisaddons.module.excel</groupId>
+        <artifactId>isis-module-excel-dom</artifactId>
+        <version>1.16.2.20180707-1320-eca4c55a</version>
         <type>test-jar</type>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.isisaddons.module.fakedata</groupId>
+        <artifactId>isis-module-fakedata-dom</artifactId>
+        <version>1.16.2.20180707-1320-eca4c55a</version>
       </dependency>
       <dependency>
         <groupId>org.isisaddons.module.fakedata</groupId>
@@ -542,6 +462,11 @@
         <groupId>org.isisaddons.module.security</groupId>
         <artifactId>isis-module-security-dom</artifactId>
         <version>1.16.2.20180707-1320-eca4c55a</version>
+      </dependency>
+      <dependency>
+        <groupId>org.isisaddons.module.security</groupId>
+        <artifactId>isis-module-security-dom</artifactId>
+        <version>1.16.2.20180707-1320-eca4c55a</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
@@ -556,6 +481,11 @@
         <version>1.16.2.20180707-1320-eca4c55a</version>
         <type>test-jar</type>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.isisaddons.module.sessionlogger</groupId>
+        <artifactId>isis-module-sessionlogger-dom</artifactId>
+        <version>1.16.2.20180707-1320-eca4c55a</version>
       </dependency>
       <dependency>
         <groupId>org.isisaddons.module.sessionlogger</groupId>
@@ -669,6 +599,11 @@
         <groupId>org.isisaddons.wicket.excel</groupId>
         <artifactId>isis-wicket-excel-cpt</artifactId>
         <version>1.16.2.20180707-1320-eca4c55a</version>
+      </dependency>
+      <dependency>
+        <groupId>org.isisaddons.wicket.excel</groupId>
+        <artifactId>isis-wicket-excel-cpt</artifactId>
+        <version>1.16.2.20180707-1320-eca4c55a</version>
         <type>test-jar</type>
         <scope>test</scope>
       </dependency>
@@ -676,8 +611,18 @@
         <groupId>org.isisaddons.wicket.fullcalendar2</groupId>
         <artifactId>isis-wicket-fullcalendar2-cpt</artifactId>
         <version>1.16.2.20180707-1320-eca4c55a</version>
+      </dependency>
+      <dependency>
+        <groupId>org.isisaddons.wicket.fullcalendar2</groupId>
+        <artifactId>isis-wicket-fullcalendar2-cpt</artifactId>
+        <version>1.16.2.20180707-1320-eca4c55a</version>
         <type>test-jar</type>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.isisaddons.wicket.gmap3</groupId>
+        <artifactId>isis-wicket-gmap3-cpt</artifactId>
+        <version>1.16.2.20180707-1320-eca4c55a</version>
       </dependency>
       <dependency>
         <groupId>org.isisaddons.wicket.gmap3</groupId>
@@ -726,6 +671,11 @@
         <groupId>org.apache.activemq</groupId>
         <artifactId>activemq-all</artifactId>
         <version>5.11.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>3.6.2</version>
       </dependency>
       <dependency>
         <groupId>org.assertj</groupId>
@@ -864,9 +814,19 @@
         <version>4.5.2</version>
       </dependency>
       <dependency>
+        <groupId>com.github.javafaker</groupId>
+        <artifactId>javafaker</artifactId>
+        <version>0.5</version>
+      </dependency>
+      <dependency>
         <groupId>org.javassist</groupId>
         <artifactId>javassist</artifactId>
         <version>3.19.0-GA</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mindrot</groupId>
+        <artifactId>jbcrypt</artifactId>
+        <version>0.3m</version>
       </dependency>
       <dependency>
         <groupId>org.jdom</groupId>
@@ -888,6 +848,12 @@
             <groupId>javassist</groupId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.16.20</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.apache.pdfbox</groupId>
@@ -1804,7 +1770,7 @@
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.0</version>
-      <scope>compile</scope>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.isisaddons.module.fakedata</groupId>
